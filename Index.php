@@ -1,4 +1,5 @@
 <?php require_once('Connections/Nabverse.php'); ?>
+<?php require_once('Connections/Nabverse.php'); ?>
 
 
 <?php
@@ -250,7 +251,7 @@ if (isset($_POST['Email'])) {
         <div id="banner" class="container3">
             <div class="title">
                 <h2>Descubra ofertas exclusivas em diversos produtos.</h2>
-                <span class="byline">Aproveite rapidamente para garantir as suas compras e desfrutar de poupanças significativas.</span>
+                <span class="byline">Aproveite rapidamente para garantir as suas compras e desfrutar de poupanÃ§as significativas.</span>
             </div>
            &nbsp; 
             <ul class="actions">
@@ -277,14 +278,14 @@ if (isset($_POST['Email'])) {
      <p>
       <label for="Email"><b>Email</b></label>
       <input type="text" name="Email" placeholder="Introduza Email" id="Email2">
-      <span class="textfieldRequiredMsg">Email obrigatória.</span><span class="textfieldInvalidFormatMsg">E-mail inválido.</span><span id="sprytextfield2">
+      <span class="textfieldRequiredMsg">Email obrigatÃ³ria.</span><span class="textfieldInvalidFormatMsg">E-mail invÃ¡lido.</span><span id="sprytextfield2">
       </span></p>
     
       <label for="psw"><b>Password</b></label>
       <span id="sprytextfield4">
       <label for="PalavraPass"></label>
       <input type="text" name="PalavraPass" placeholder="Introduza Password" id="PalavraPass">
-      <span class="textfieldRequiredMsg">Password obrigatória.</span></span>
+      <span class="textfieldRequiredMsg">Password obrigatÃ³ria.</span></span>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Lembrar-me
       </label>
@@ -295,7 +296,7 @@ if (isset($_POST['Email'])) {
     </div>
      
     <div class="Reg-Pas">
-    <p style="text-align:center;">Ainda não tem conta? <a href="Register.php">Register</a></p>
+    <p style="text-align:center;">Ainda nÃ£o tem conta? <a href="Register.php">Register</a></p>
     </div>
     
     
@@ -428,10 +429,10 @@ window.onclick = function(event) {
 
    
 <div class="callout">
-  <div class="callout-header">BLACK FRIDAY - Promoções </div>
-  <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+  <div class="callout-header">BLACK FRIDAY - PromoÃ§Ãµes </div>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">Ã—</span>
   <div class="callout-container">
-    <p>Explore promoções exclusivas numa variedade de produtos. <a href="Promocoes.php">Compre agora</a> e poupe mais. </p>
+    <p>Explore promoÃ§Ãµes exclusivas numa variedade de produtos. <a href="Promocoes.php">Compre agora</a> e poupe mais. </p>
   </div>
 </div>
 
