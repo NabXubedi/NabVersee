@@ -1,0 +1,435 @@
+@charset "utf-8";
+/* CSS Document */
+
+	body
+	{
+	margin: 0px;
+	padding: 0px;
+	font-family: Helvetica;
+	font-size: 15px;
+	font-weight: 400;
+	background-color:#ffffff;
+	}
+	
+	
+	h1, h2, h3
+	{
+		margin: 0;
+		padding: 0;
+		
+	}
+	
+	p, ul
+	{
+		margin-top: 0;
+	}
+	
+	ul
+	{
+		padding: 0;
+		list-style: none;
+	}
+	
+	p
+	{
+	line-height: 180%;
+	font-size-adjust: 40px;
+		
+	}
+	
+	
+	a:hover
+	{
+		text-decoration: none;
+	}
+	
+	.container
+	{
+		overflow: hidden;
+		margin: 0em auto;
+		width: 80%;
+		
+	}
+    
+ .container2 {
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 30px;
+	background:  linear-gradient(rgba(4,9,30,0.50),rgba(4,9,30,0.80)), url(Imagem/office-865091.jpg) no-repeat;
+	background-position:center;
+	background-size:cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+	
+	
+  }
+ .container3 {
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 30px;
+	background-color: #f4f4f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+.text {
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+	margin-top:5%;
+	color:#FFF;
+}
+.text h2 {
+    
+	color:#CCC;
+}
+
+
+.image {
+    float: left;
+    width:40%;
+    box-sizing: border-box;
+    margin-right: 30px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.image1 {
+    float: none;
+    width:90%;
+    box-sizing: border-box;
+}
+
+.image1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+
+/*********************************************************************************/
+/* FQAS                                                                        */
+/*********************************************************************************/
+section {
+            margin: 20px;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 0.8s ease-in-out;
+			
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .faq-item:hover {
+            transform: scale(1.02);
+        }
+
+        .question {
+            font-weight: bold;
+            margin-bottom: 12px;
+            font-size: 1.2em;
+        }
+
+        .answer {
+            margin-top: 8px;
+            line-height: 1.6;
+        }
+
+        .icon {
+            margin-right: 8px;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header-wrapper
+	{
+	
+	    position: relative;
+		padding: 40px 0px 0px 0px;
+		background: url(Imagem/iphone15new.jpg) no-repeat;
+		background-size: cover;
+		width:100%;
+		
+		
+	}
+	#header
+	{
+		position: relative;
+		padding: 15em 0em;
+	}
+	
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+	{
+	position: absolute;
+	top: 20px;
+	left: 40px;
+		
+	}
+	
+	#logo h1
+	{
+		font-size:35px;
+		
+	}
+	
+	#logo a
+	{
+		text-decoration: none;
+		color: #000;
+		
+	}
+	#logo a span
+	{
+		color: #060;
+	}
+
+   
+/*********************************************************************************/
+/* Heading Titles                                                                */
+/*********************************************************************************/
+
+	.title
+	{
+		animation: fadeInUp 0.8s ease-in-out;s
+	}
+	
+	.title h2
+	{
+		font-size: 23px;
+		font-weight:800;
+		margin-bottom: 2px;
+		color:#000;
+		
+	}
+	.title h3
+	{
+		font-size: 18px;
+		font-weight:800;
+		margin-bottom: 10px;
+		
+	}
+	
+	.title p
+	{
+		color:#000;
+		
+	}
+	.title p span
+	{
+		color:#000;
+		font-weight:700;
+		font-size:16px;
+		
+	}
+	@keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+
+#menu {
+	background: transparent;
+	right: 82px;
+	top: 16px;
+	position : absolute;
+	
+	
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	display: inline-block;
+}
+
+#menu li {
+    float: left;
+    display: block;
+    margin: 0 10px 0 0;
+    position: relative;
+	text-align: center;
+}
+
+#menu a {
+    font-size: 17px;
+	font-weight:500;
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+	border-bottom: 2px solid transparent;
+}
+
+#menu a:hover {
+     color: #030;
+	 border-bottom: 2px solid green;
+}
+#menu li:hover .dropdown_menu {
+    display: block;
+}
+
+/*----------------*/
+
+#loginbtn {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right:0%;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;	
+}
+
+#icon:hover .dropdown_menu {
+    display: block;
+	
+}
+.dropdown_menu {
+      display: none;
+      position: absolute;
+      background-color: #FFF;
+      min-width: 120px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+	  border-radius:20px;
+}
+
+.dropdown_menu ul {
+    list-style: none;
+	margin:auto;
+  
+}
+
+.dropdown_menu ul li {
+    padding:2px;
+	width:100%;
+	border-radius: 10px;
+}
+.dropdown_menu ul li a{
+	padding:10px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+	text-align:center;
+}
+
+.dropdown_menu ul li:hover {
+    background-color:#CCC;
+	font-weight:600;
+	color:#030;
+	
+}
+
+ #icon{
+	position: absolute;
+	top: 21px;
+	Right: -3px;
+	width: 52px;
+	height: 54px;
+	
+	
+}
+#icon img {
+    cursor: pointer;
+	
+}
+
+
+
+/* Adjust the styles for the sub-dropdown menu */
+.sub_dropdown_menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%; /* Position to the right of the parent dropdown */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    width: 120px; /* Set the desired width */
+	border-radius: 10px;
+}
+
+.sub_dropdown_menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sub_dropdown_menu ul li {
+    padding:1px; /* Adjust the padding as needed */
+}
+
+/* Show sub-dropdown menu on hover */
+.dropdown_menu li:hover .sub_dropdown_menu {
+    display: block;
+}
+     
+  
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+	#copyright
+	{
+		overflow: hidden;
+		padding: 3em 0em;
+		border-top: 10px solid rgba(0,0,0,0.08);
+		border-bottom:10px solid rgba(0,0,0,0.08);
+	}
+	
+	#copyright p
+	{
+		text-align: center;
+		font-size: 13px;
+		color: #000;
+		text-transform: uppercase;
+	}
+	<!------------------------------------------------------------->
+	

@@ -1,0 +1,958 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #f4f4f4;
+	
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+p, ul {
+    margin-top: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+p {
+	line-height: 180%;
+	color: #000;
+	font-size-adjust: 40px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+  
+}
+.Reg-Pas{
+	text-align:center;
+	text-decoration:none;
+	
+}
+.Reg-Pas a{
+	text-align:center;
+	text-decoration:none;
+	
+}
+img.avatar {
+  border-radius: 50%;
+  width:100px;
+  height:100px;
+}
+
+.Logincontainer {
+  padding: 16px;
+  width:93%;
+  text-decoration:none;
+}
+.Logincontainer p a{
+ 
+  text-decoration:none;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+  border-radius: 30px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #F00;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+
+/*Callout */
+
+.callout {
+      position: fixed;
+      bottom: 20px;
+      max-width: 350px;
+      overflow: hidden;
+      border-radius: 8px;
+      background: #fff;
+	  right: -300px;
+      transform: translate(0, -50%);
+      transition: right 0.9s ease-in-out;
+	  
+    }
+
+    .callout-header {
+      padding: 15px;
+      background: url(Imagem/bg1.png);
+      font-size: 18px;
+	  font-family: Verdana, Geneva, sans-serif;
+	  font-weight:600;
+      color: #F00;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .closebtn {
+      position: absolute;
+      top: 5px;
+      right: 15px;
+      color: #000;
+      font-size: 25px;
+      cursor: pointer;
+	  font-weight:800;
+    }
+
+    .closebtn:hover {
+      color:#F00;
+    }
+
+    .callout-container {
+      padding: 15px;
+      color: #333;
+    }
+
+    .callout-container p {
+      margin-bottom: 10px;
+    }
+
+    .callout-container a {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .callout-container a:hover {
+      text-decoration: underline;
+    }
+
+
+
+.container2 {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.container3 {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color:transparent;
+}
+.Login_container {
+    max-width: 30%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.text {
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+    margin-top: 6%;
+    margin-right: 40px;
+}
+
+.text p {
+    font-family: SamsungOne;
+    color: #000;
+    text-align: center;
+}
+
+.text p span {
+    font-family: SamsungOne;
+    color: #000;
+    text-align: center;
+    line-height: 50px;
+}
+
+.text h2 {
+    font-size: 36px;
+    line-height: 80px;
+    font-family: SamsungOne;
+    text-align: center;
+}
+
+.imageZFlip {
+    float: left;
+    width: 40%;
+	height:40%;
+    box-sizing: border-box;
+    margin-right: 30px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Button Style */
+.button {
+    display: block;
+    padding: 15px 30px;
+    background: url(Imagem/BannerGreen2.png);
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    color: #FFF;
+    transition-duration: 0.8s;
+    text-align: center;
+}
+
+.button:hover {
+    background: url(Imagem/apple-1867461_1920.jpg);
+    color: #FFF;
+	
+}
+
+.button1 {
+	border: 3px solid #CCC;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 15px;
+    background-color: transparent;
+    margin-left: 5px;
+	color:#CCC;
+	transition: transform 0.5s ease-in-out;
+    transition-duration: 0.4s;
+}
+.logoutbutton {
+	border: 2px solid #000;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    margin-left: 5px;
+	color:#000;
+	
+}
+.logoutbutton:hover {
+	background-color:#030;
+	color:#fff;
+	
+}
+
+.button2 {
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: #f4f4f4;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 13px;
+    color: #000;
+    border: 1px solid #000;
+    transition-duration: 0.5s;
+    transition: transform 0.3s ease-in-out;
+}
+
+.button1:hover {
+    background-color: #FFF;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.button2:hover {
+    background: url(Imagem/BannerGreen2.png);
+    color: #FFF;
+    border: 1px solid #fff;
+    transform: scale(1.05);
+}
+
+/* Header */
+#header-wrapper {
+    position: relative;
+    padding: 0px 0px 50px 0px;
+	background:  linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(Imagem/PCD_Galaxy-S_Curation-KV_1440x640_pc.avif) no-repeat;
+    background-size: cover;
+	}
+
+#header {
+	position: relative;
+    padding: 2.5em 0em;
+	background-color:#F4f4f4;
+}
+ #line_UserName {
+	 margin-top:5px;
+        display: flex;
+        justify-content: space-between;
+		margin-bottom:-5px;
+		background-color:#F4f4f4;
+			
+    }
+
+    #line_UserName p {
+        color: #000;
+        margin: 0;
+		padding: 0 20px;
+    }
+
+
+/* Logo */
+#logo {
+    position: absolute;
+    top: 20px;
+    left: 150px;
+}
+
+#logo h1 {
+    font-size: 35px;
+}
+
+#logo a {
+    text-decoration: none;
+    color: #000;
+}
+
+#logo a span {
+    color: #060;
+}
+
+/* Menu */
+#menu {
+    right: 150px;
+    top: 16px;
+    position: absolute;
+}
+
+#menu ul li{
+    list-style: none;
+    display: inline-block;
+	float: left;
+	position: relative;
+	margin: 0 10px 0 0;
+}
+
+#menu a {
+    font-size: 17px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-bottom: 2px solid transparent;
+}
+
+#menu a:hover {
+    color: #030;
+    border-bottom: 2px solid green;
+}
+
+#menu li:hover .dropdown_menu {
+    display: block;
+}
+
+/* Icon */
+#loginbtn {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+#icon:hover .dropdown_menu {
+    display: block;
+}
+
+/* Dropdown menu */
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 120px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+	z-index: 3;
+}
+
+.dropdown_menu ul {
+    list-style: none;
+    margin: auto;
+}
+
+.dropdown_menu ul li {
+    padding: 2px;
+    width: 100%;
+    border-radius:10px;
+}
+
+.dropdown_menu ul li a {
+    padding: 10px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+}
+
+.dropdown_menu ul li:hover {
+    background-color: #CCC;
+    color: #030;
+}
+
+#icon {
+    position: absolute;
+    top: 20px;
+    Right: 90px;
+}
+
+#icon img {
+    cursor: pointer;
+}
+
+/* Sub-dropdown menu */
+.sub_dropdown_menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    width: 120px;
+    border-radius: 10px;
+}
+
+.sub_dropdown_menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Show sub-dropdown menu on hover */
+.dropdown_menu li:hover .sub_dropdown_menu {
+    display: block;
+}
+
+/* Banner */
+#banner {
+	margin-top:310px;
+    padding: 30px;
+	text-align:left;
+	width:90%;
+	border-radius:30px;
+	
+}
+
+#banner .title h2 {
+    font-size: 25px;
+	color:#CCC;
+}
+
+#banner .title .byline {
+    line-height: 40px;
+    font-size: 18px;
+	color:#CCC;
+}
+
+/* Deal de dia */
+.deal-container {
+    position: relative;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+	border-radius: 53px;
+background: #F4F4F4;
+box-shadow:  12px 12px 53px #b5b5b5,
+             -12px -12px 53px #ffffff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.deal-container:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.deal-image {
+    float: right;
+    margin: 10px;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.deal-container:hover .deal-image {
+    transform: rotate(360deg);
+}
+
+.deal-text {
+    padding: 20px;
+    text-align: center;
+}
+
+.deal-text h1 {
+    color: #000;
+    font-size: 2.5em;
+    font-family: 'Pacifico', cursive;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.deal-text p {
+    color: #555;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.price {
+    text-decoration: line-through;
+    color: #777;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+.discounted-price {
+    color: #e44d26;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.deal-button {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    background-color: rgba(56, 75, 55, 255);
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.deal-button:hover {
+    background-color: #060;
+}
+
+/* Phone section */
+
+ .product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 30px;
+  
+}
+
+.card {
+  perspective: 1000px;
+  width: 200px;
+  height: 400px;
+  margin: 10px;
+  text-align: left;
+  font-family: arial;
+  
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.card-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  transform: rotateY(180deg);
+}
+
+.product-image {
+  width: 100%;
+  height: 220px;
+}
+
+.Back_product-image {
+  width: 100%;
+  height: 290px;
+}
+
+.product-title {
+  font-size: 14px;
+  margin: 5px 0;
+  margin-left: 10px;
+}
+
+.Product-price {
+  color: #f00;
+  font-size: 18px;
+  margin: 0 0;
+  font-weight: 800;
+  margin-left: 10px;
+}
+
+.product-description {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 10px;
+  color: white;
+  font-weight: 700;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  flex-grow: 1;
+  font-size: 12px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+  color: #000;
+  background-color: #fff;
+}
+
+
+/* Line */
+#line {
+	top:0;
+    padding: 10px;
+    height: 30px;
+    width: auto;
+	background:#000;
+	
+}
+
+#line p {
+    text-align: center;
+    font-size: 15px;
+    color: #CCC;
+	
+	
+}
+
+#line1 {
+    overflow: hidden;
+    padding: 30px;
+    width: auto;
+    background-color: #f4f4f4;
+}
+
+#line1 h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+	color: #000;
+    font-size: 2em;
+    font-family: 'Pacifico', cursive;
+  
+}
+
+
+
+/* Sobranos Container */
+.sobranos-container {
+    text-align: center;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 30px;
+    background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(Imagem/PCD_Galaxy-S_Curation-KV_1440x640_pc.avif);
+    background-size: cover;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+}
+
+.sobranos-container .title {
+    color: #f4f4f4;
+}
+
+/* Copyright */
+#copyright {
+    overflow: hidden;
+    padding: 3em 0em;
+    border-top: 10px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 10px solid rgba(0, 0, 0, 0.08);
+}
+
+#copyright p {
+    text-align: center;
+    font-size: 10px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+@media(max-width:700px)
+    {
+	#line {
+    height: 20px;
+    }
+	#line p {
+    font-size: 10px;
+    }
+	#logo {
+    top: 7px;
+    left:5px;
+    }
+   #logo h1 {
+    font-size: 35px;
+    }
+
+    #header {
+    padding: 13em 0em;
+    }
+
+   #banner .title h2 {
+    
+    font-size: 20px;
+   }
+   #banner .title .byline {
+    font-size: 15px;
+   }
+   .imageZFlip {
+     margin-left: auto;
+     margin-right: auto;
+     width: 60%;
+     float: none;
+	}
+	.text {
+	padding: 15px;
+    text-align: center;
+    width: 80%;
+   
+    }
+	#menu {
+    position:absolute;
+	background:#F4F4F4;
+	width:150px;
+	height:100vh;
+	top:80px;
+	right:0;
+	text-align:left;
+	z-index:2;
+	margin:5px 0;
+    }
+	.dropdown_menu {
+    min-width: 100px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+   }
+   .dropdown_menu ul {
+    list-style: none;
+    margin: auto;
+}
+
+.dropdown_menu ul li {
+    padding: 2px;
+    width: 100%;
+    border-radius:10px;
+}
+
+.dropdown_menu ul li a {
+    padding: 5px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+	font-size:10px;
+}
+
+.dropdown_menu ul li:hover {
+    background-color: #CCC;
+    font-weight: 600;
+    color: #030;
+}
+
+	
+/*Callout*/
+
+.callout {
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+}
+
+.callout-header {
+  padding: 25px 15px;
+  background: #555;
+  font-size: 30px;
+  color: white;
+}
+
+.callout-container {
+  padding: 15px;
+  background-color: #ccc;
+  color: black
+}
+
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: lightgrey;
+}
+
+
+
+
+
+}
+@media(max-width:1500px)
+    {
+	
+	#logo {
+    position: absolute;
+    top: 14px;
+    left: 40px;
+    }
+   
+}
